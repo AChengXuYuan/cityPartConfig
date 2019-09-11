@@ -1,0 +1,38 @@
+{
+	"name": "UPNetwork_RQ_RQYJ_Point_advanceSearch",
+	"property_set_type_id": "高级搜索",
+	"is_base": 1,
+	"properties": [
+        {
+			"name": "currentState",
+			"alias": "当前状态",
+			"type": "dict",
+			"convertValue": "UPNetwork_currentState"
+        },
+        {
+			"name": "roadName",
+			"alias": "所在道路",
+			"type": "dict",
+			"convertValue": "UPNetwork_layingWay"
+		},
+		{
+			"name": "materia",
+			"alias": "manholeCoverMaterial",
+			"type": "dict",
+			"convertValue": "UPNetwork_drainagePipelineMaterial"
+		},
+		{
+			"name": "ownershipUnit",
+			"alias": "埋没日期",
+			"type": "period",
+			"convertValue": [
+				{ "name": "近一月", "value": [1, "m"], "type": "before_now" },
+				{ "name": "近三月", "value": [3, "m"], "type": "before_now" },
+				{ "name": "近半年", "value": [6, "m"], "type": "before_now" },
+				{ "name": "近一年", "value": [1, "y"], "type": "before_now" }
+			]
+		}
+	],
+	"create_date_time": 1538097510556,
+	"update_date_time": 1538097510556
+}

@@ -1,0 +1,50 @@
+{
+	"name": "UPNetwork_RQ_QT_Point_sampleSearch",
+	"property_set_type_id": "简单搜索",
+	"is_base": 1,
+	"properties": [
+		{
+			"name": "pipeId",
+			"alias": "编号"
+		},
+		{
+			"name": "roadName",
+			"alias": "路名"
+		},
+		{
+			"name": "familyandType",
+			"alias": "类型"
+		},
+		{
+			"name": "roadName",
+			"alias": "位置"
+		},
+		{
+			"name": "roadName",
+			"alias": "是否特征点",
+            "dict": "istcditc"
+		},
+		{
+			"name": "roadName",
+            "alias": "是否附属物",
+            "dict": "istcditc"
+        },
+        {
+			"name": "roadName",
+            "alias": "当前状态",
+            "dict": "istcditc"
+        },
+        {
+			"name": "roadName",
+            "alias": "埋设日期",
+            "format": "YYYY年-MM月-DD日"
+        },
+        {
+			"name": "roadName",
+            "alias": "权属单位",
+            "dict": "dictunit"
+		}
+	],
+	"create_date_time": 1538097510556,
+	"update_date_time": 1538097510556
+}

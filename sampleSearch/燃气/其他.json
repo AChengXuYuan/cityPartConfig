@@ -1,0 +1,29 @@
+{
+	"name": "UPNetwork_RQ_QT_Point_sampleSearch",
+	"property_set_type_id": "简单搜索",
+  "is_base": 1,
+  "properties": [
+    {
+      "name": "pipeId",
+      "alias": "管线编号",
+      "type": "SimilarFilteringItem"
+    },
+    {
+      "name": "startId",
+      "alias": "起点物探点号",
+      "type": "SimilarFilteringItem"
+    },
+    {
+      "name": "endId",
+      "alias": "终点物探点号",
+      "type": "SimilarFilteringItem"
+    },
+    {
+        "name": "embedmentTime",
+      "alias": "敷设日期",
+      "type": "SimilarFilteringItem"
+    }
+  ],
+  "create_date_time": 1538097510556,
+  "update_date_time": 1538097510556
+}

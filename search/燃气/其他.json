@@ -1,0 +1,78 @@
+{
+	"name": "UPNetwork_RQ_QT_Point_advanceSearch",
+	"property_set_type_id": "高级搜索",
+  "is_base": 1,
+  "properties": [
+    {
+      "name": "f1",
+      "alias": "管线材质",
+      "type": "dict",
+      "convertValue": "UPNetwork_waterSupplyPipelineMaterial"
+    },
+    {
+      "name": "f2",
+      "alias": "敷设方式",
+      "type": "dict",
+      "convertValue": "UPNetwork_layingWay"
+    },
+    {
+      "name": "f3",
+      "alias": "当前状态",
+      "type": "dict",
+      "convertValue": "UPNetwork_currentState"
+    },
+    {
+      "name": "f4",
+      "alias": "权属单位",
+      "type": "dict",
+      "convertValue": "UPNetwork_ownershipUnits"
+    },
+    {
+      "name": "f5",
+      "alias": "所在道路",
+      "type": "dict",
+      "convertValue": "UPNetwork_ownershipUnits"
+    },
+    {
+      "name": "f6",
+      "alias": "敷设日期",
+      "type": "period",
+      "convertValue": [
+        {
+          "name": "近一月",
+          "value": [
+            1,
+            "month"
+          ],
+          "type": "before_now"
+        },
+        {
+          "name": "近三月",
+          "value": [
+            3,
+            "month"
+          ],
+          "type": "before_now"
+        },
+        {
+          "name": "近半年",
+          "value": [
+            6,
+            "month"
+          ],
+          "type": "before_now"
+        },
+        {
+          "name": "近一年",
+          "value": [
+            1,
+            "year"
+          ],
+          "type": "before_now"
+        }
+      ]
+    }
+  ],
+  "create_date_time": 1538097510556,
+  "update_date_time": 1538097510556
+}
