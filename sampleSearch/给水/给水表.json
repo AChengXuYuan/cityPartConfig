@@ -1,0 +1,20 @@
+{
+	"name": "UPNetwork_JS_SB_Point_sampleSearch",
+	"property_set_type_id": "给水表简单查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "pipeId",
+		"alias": "管道编号",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "ownershipUnit",
+		"alias": "埋没日期",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "unitConnectionWay",
+		"alias": "权属单位",
+		"type": "SimilarFilteringItem"
+	}],
+	"create_date_time": 1568215557431,
+	"update_date_time": 1568215557431
+}

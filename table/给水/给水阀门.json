@@ -1,0 +1,51 @@
+{
+	"name": "UPNetwork_JS_FM_Point",
+	"property_set_type_id": "给水阀门view",
+	"is_base": 1,
+	"properties": [{
+		"name": "pipeCode",
+		"alias": "管点编号",
+		"sort": true
+	}, {
+		"name": "pipeNetworkType",
+		"alias": "管网类型",
+		"sort": true
+	}, {
+		"name": "tubeType",
+		"alias": "管点类型",
+		"sort": true
+	}, {
+		"name": "roadName",
+		"alias": "所在道路",
+		"sort": true
+	}, {
+		"name": "location",
+		"alias": "位置",
+		"sort": false
+	}, {
+		"name": "buriedDepth",
+		"alias": "埋深",
+		"sort": false
+	}, {
+		"name": "currentState",
+		"alias": "当前状态",
+		"sort": false,
+		"convert": {
+			"type": "dict",
+			"data": "UPNetwork_currentState"
+		}
+	}, {
+		"name": "ownershipUnit",
+		"alias": "埋没日期",
+		"sort": true,
+		"convert": {
+			"type": "date"
+		}
+	}, {
+		"name": "unitConnectionWay",
+		"alias": "权属单位",
+		"sort": false
+	}],
+	"create_date_time": 1568222228898,
+	"update_date_time": 1568222228898
+}

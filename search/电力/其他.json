@@ -1,0 +1,39 @@
+{
+	"name": "UPNetwork_DL_QT_Point_advanceSearch",
+	"property_set_type_id": "电力其它设施高级查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "currentState",
+		"alias": "当前状态",
+		"type": "dict",
+		"convertValue": "UPNetwork_currentState"
+	}, {
+		"name": "ownershipUnit",
+		"alias": "埋没日期",
+		"type": "period",
+		"convertValue": [{
+			"name": "近一月",
+			"value": [1, "m"],
+			"type": "before_now"
+		}, {
+			"name": "近三月",
+			"value": [3, "m"],
+			"type": "before_now"
+		}, {
+			"name": "近半年",
+			"value": [6, "m"],
+			"type": "before_now"
+		}, {
+			"name": "近一年",
+			"value": [1, "y"],
+			"type": "before_now"
+		}]
+	}, {
+		"name": "unitConnectionWay",
+		"alias": "权属单位",
+		"type": "dict",
+		"convertValue": "UPNetwork_ownershipUnits"
+	}],
+	"create_date_time": 1568227045347,
+	"update_date_time": 1568227045347
+}

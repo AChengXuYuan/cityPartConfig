@@ -1,0 +1,16 @@
+{
+	"name": "UPNetwork_JS_FM_Point_sampleSearch",
+	"property_set_type_id": "给水阀门简单查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "pipeCode",
+		"alias": "管点编号",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "location",
+		"alias": "位置",
+		"type": "SimilarFilteringItem"
+	}],
+	"create_date_time": 1568222369915,
+	"update_date_time": 1568222369915
+}

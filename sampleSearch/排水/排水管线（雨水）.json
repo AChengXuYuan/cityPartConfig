@@ -1,0 +1,20 @@
+{
+	"name": "UPNetwork_YS_Tubulation_sampleSearch",
+	"property_set_type_id": "排水管线简单查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "pipeCode",
+		"alias": "管线编号",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "startId",
+		"alias": "起点号",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "endId",
+		"alias": "终点号",
+		"type": "SimilarFilteringItem"
+	}],
+	"create_date_time": 1568243029237,
+	"update_date_time": 1568243029237
+}

@@ -1,0 +1,64 @@
+{
+	"name": "UPNetwork_DL_Tubulation_table",
+	"property_set_type_id": "电力管线表格展示view",
+	"is_base": 1,
+	"properties": [{
+		"name": "pipeCode",
+		"alias": "管线编号",
+		"sort": true
+	}, {
+		"name": "pipeNetworkType",
+		"alias": "管网类型",
+		"sort": true
+	}, {
+		"name": "linePipeCategoryName",
+		"alias": "管线管点分类名称",
+		"sort": true
+	}, {
+		"name": "roadName",
+		"alias": "所在道路",
+		"sort": true
+	}, {
+		"name": "startId",
+		"alias": "起点号",
+		"sort": true
+	}, {
+		"name": "endId",
+		"alias": "终点号",
+		"sort": true
+	}, {
+		"name": "startPointDepth",
+		"alias": "起点埋深",
+		"sort": false
+	}, {
+		"name": "endPointDepth",
+		"alias": "终点埋深",
+		"sort": false
+	}, {
+		"name": "sectionCaliber",
+		"alias": "管径",
+		"sort": false
+	}, {
+		"name": "material",
+		"alias": "材质",
+		"sort": true,
+		"convert": {
+			"type": "dict",
+			"data": "UPNetwork_powerLineMaterial"
+		}
+	}, {
+		"name": "length",
+		"alias": "管长（m）",
+		"sort": false
+	}, {
+		"name": "embedmentType",
+		"alias": "敷设方式",
+		"sort": true,
+		"convert": {
+			"type": "dict",
+			"data": "UPNetwork_currentState"
+		}
+	}],
+	"create_date_time": 1568225650010,
+	"update_date_time": 1568225650010
+}

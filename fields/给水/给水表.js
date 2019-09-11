@@ -1,16 +1,16 @@
 const fields = [
-    {"name": "*管道编号", "id": "pipeId", ss: true, col: true, sort: true },
-    {"name": "*管点编号", "id": "pipeCode", col: true},
-    {"name": "*管网类型", "id": "pipeNetworkType"},
-    {"name": "*管点类型", "id": "tubeType"},
-    {"name": "*标准代码", "id": "standardCode"},
-    {"name": "*所在道路", "id": "roadName"},
-    {"name": "位置", "id": "location"},
+    {"name": "*管道编号", "id": "pipeId", ss: true, disabled: true },
+    {"name": "*管点编号", "id": "pipeCode", disabled: true, sort: true, col: true},
+    {"name": "*管网类型", "id": "pipeNetworkType", disabled: true, sort: true, col: true},
+    {"name": "*管点类型", "id": "tubeType", disabled: true, sort: true, col: true},
+    {"name": "*标准代码", "id": "standardCode", disabled: true},
+    {"name": "*所在道路", "id": "roadName", disabled: true, sort: true, col: true},
+    {"name": "位置", "id": "location", col: true},
     {"name": "所属服务区", "id": "belongsToTheServiceArea"},
     {"name": "地面高程", "id": "groundElevation"},
     {"name": "埋深", "id": "buriedDepth"},
     {"name": "维护次数", "id": "maintainTheNumberOf"},
-    {"name": "当前状态", "id": "currentState"},
+    {"name": "当前状态", "id": "currentState", sort: true, as: true, col: true, type: 'dictSelector', data: 'UPNetwork_currentState'},
     {"name": "*埋没日期", "id": "ownershipUnit", type: 'date', ss: true, as: true, col: true},
     {"name": "*使用年限", "id": "contacter"},
     {"name": "*权属单位", "id": "unitConnectionWay", type: 'dictSelector', data: 'UPNetwork_ownershipUnits', ss: true, as: true, col: true},
@@ -18,7 +18,7 @@ const fields = [
     {"name": "单位联系方式", "id": "numberOfMaintenance"},
     {"name": "施工单位", "id": "constructionUnit"},
     {"name": "设计单位", "id": "designUnits"},
-    {"name": "*是否监测", "id": "whetherMonitoring"},
+    {"name": "*是否监测", "id": "whetherMonitoring", type: 'dictRadio', data: 'UPNetwork_whetherTheMonitoring'},
     {"name": "坐标", "id": "position"},
     {"name": "备注", "id": "remark"}
 ]
@@ -48,7 +48,7 @@ function getFormItems({ name, id, type = 'nomal', data, disabled = false }) {
         switch(type) {
             case 'dictSelector':
                     result = {
-                        "component": "DictRadio",
+                        "component": "DictSelector",
                         "componentProps": {
                             "dictName": data
                         },
@@ -84,11 +84,10 @@ function getFormItems({ name, id, type = 'nomal', data, disabled = false }) {
         "name": id,
         "displayName": rName,
         "required": required,
-        "component": "input",
-        "componentProps": {},
         "formItemOptions": options,
         "disabled": disabled,
-        "visible": true
+        "visible": true,
+        ...getWiget(type, data),
     }
 }
 
@@ -145,7 +144,7 @@ function buildTable(fields, objectypeId, objectName) {
         return pre
     }, [])
     const json = {
-        "name": `${objectypeId}_sampleSearch`,
+        "name": `${objectypeId}_table`,
         "property_set_type_id": `${objectName}表格展示view`,
         "is_base": 1,
         "properties": properties || [],
@@ -185,7 +184,7 @@ function buildAdvanceSearch(fields, objectypeId, objectName) {
         const { name, id, as, type, data } = item
         const nameInfo = name.split('*')
         const rName = nameInfo[1] || name
-        if (as) {
+        if (as && type) {
             if (type === 'date') {
                 pre.push({
                     "name": id,

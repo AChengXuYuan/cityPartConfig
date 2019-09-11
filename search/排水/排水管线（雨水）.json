@@ -1,0 +1,44 @@
+{
+	"name": "UPNetwork_YS_Tubulation_advanceSearch",
+	"property_set_type_id": "排水管线高级查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "material",
+		"alias": "材质",
+		"type": "dict",
+		"convertValue": "UPNetwork_powerLineMaterial"
+	}, {
+		"name": "embedmentType",
+		"alias": "敷设方式",
+		"type": "dict",
+		"convertValue": "UPNetwork_currentState"
+	}, {
+		"name": "embedmentTime",
+		"alias": "敷设日期",
+		"type": "period",
+		"convertValue": [{
+			"name": "近一月",
+			"value": [1, "m"],
+			"type": "before_now"
+		}, {
+			"name": "近三月",
+			"value": [3, "m"],
+			"type": "before_now"
+		}, {
+			"name": "近半年",
+			"value": [6, "m"],
+			"type": "before_now"
+		}, {
+			"name": "近一年",
+			"value": [1, "y"],
+			"type": "before_now"
+		}]
+	}, {
+		"name": "ownershipUnit",
+		"alias": "权属单位",
+		"type": "dict",
+		"convertValue": "UPNetwork_ownershipUnits"
+	}],
+	"create_date_time": 1568243072509,
+	"update_date_time": 1568243072509
+}

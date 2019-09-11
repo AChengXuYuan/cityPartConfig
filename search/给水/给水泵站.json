@@ -1,0 +1,34 @@
+{
+	"name": "UPNetwork_JS_BZ_Point_advanceSearch",
+	"property_set_type_id": "给水管井高级查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "currentState",
+		"alias": "当前状态",
+		"type": "dict",
+		"convertValue": "UPNetwork_currentState"
+	}, {
+		"name": "ownershipUnit",
+		"alias": "埋没日期",
+		"type": "period",
+		"convertValue": [{
+			"name": "近一月",
+			"value": [1, "m"],
+			"type": "before_now"
+		}, {
+			"name": "近三月",
+			"value": [3, "m"],
+			"type": "before_now"
+		}, {
+			"name": "近半年",
+			"value": [6, "m"],
+			"type": "before_now"
+		}, {
+			"name": "近一年",
+			"value": [1, "y"],
+			"type": "before_now"
+		}]
+	}],
+	"create_date_time": 1568221350102,
+	"update_date_time": 1568221350102
+}

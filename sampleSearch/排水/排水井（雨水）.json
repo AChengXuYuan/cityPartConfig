@@ -1,0 +1,16 @@
+{
+	"name": "UPNetwork_PS_YSJ_Point_sampleSearch",
+	"property_set_type_id": "排水井简单查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "pipeCode",
+		"alias": "管点编号",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "location",
+		"alias": "位置",
+		"type": "SimilarFilteringItem"
+	}],
+	"create_date_time": 1568243351411,
+	"update_date_time": 1568243351411
+}

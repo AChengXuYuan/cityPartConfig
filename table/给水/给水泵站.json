@@ -1,0 +1,32 @@
+{
+	"name": "UPNetwork_JS_BZ_Point_table",
+	"property_set_type_id": "给水管井表格展示view",
+	"is_base": 1,
+	"properties": [{
+		"name": "pipeCode",
+		"alias": "管点编号",
+		"sort": true
+	}, {
+		"name": "pipeNetworkType",
+		"alias": "管网类型",
+		"sort": true
+	}, {
+		"name": "tubeType",
+		"alias": "管点类型",
+		"sort": false
+	}, {
+		"name": "roadName",
+		"alias": "所在道路",
+		"sort": true
+	}, {
+		"name": "location",
+		"alias": "位置",
+		"sort": false
+	}, {
+		"name": "unitConnectionWay",
+		"alias": "权属单位",
+		"sort": false
+	}],
+	"create_date_time": 1568221229320,
+	"update_date_time": 1568221229320
+}

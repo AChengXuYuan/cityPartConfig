@@ -1,19 +1,16 @@
 {
 	"name": "UPNetwork_RQ_RQYJ_Point_sampleSearch",
-	"property_set_type_id": "简单搜索",
+	"property_set_type_id": "燃气井简单查询view",
 	"is_base": 1,
-	"properties": [
-		{
-			"name": "pipeCode",
-			"alias": "管点编号",
-			"type": "SimilarFilteringItem"
-		},
-		{
-			"name": "location",
-			"alias": "位置",
-			"type": "SimilarFilteringItem"
-		}
-	],
-	"create_date_time": 1538097510556,
-	"update_date_time": 1538097510556
+	"properties": [{
+		"name": "pipeCode",
+		"alias": "管点编号",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "location",
+		"alias": "位置",
+		"type": "SimilarFilteringItem"
+	}],
+	"create_date_time": 1568228101602,
+	"update_date_time": 1568228101602
 }
