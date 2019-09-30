@@ -1,0 +1,28 @@
+{
+	"name": "MANG_CityComponent_advanceSearch",
+	"property_set_type_id": "城市部件高级查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "road",
+		"alias": "所在道路",
+		"type": "dict",
+		"convertValue": "InternetOfThingsEquipment_Road"
+	}, {
+		"name": "ownershipUnit",
+		"alias": "权属单位",
+		"type": "dict",
+		"convertValue": "InternetOfThingsEquipment_OwnershipUnit"
+	}, {
+		"name": "status",
+		"alias": " 状态",
+		"type": "dict",
+		"convertValue": "InternetOfThingsEquipment_EquipmentStatus"
+	}, {
+		"name": "monitor",
+		"alias": "是否监测",
+		"type": "dict",
+		"convertValue": "UPNetwork_whetherTheMonitoring"
+	}],
+	"create_date_time": 1569380491907,
+	"update_date_time": 1569380491907
+}

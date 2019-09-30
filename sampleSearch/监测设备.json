@@ -1,0 +1,20 @@
+{
+	"name": "moniter_advice_sampleSearch",
+	"property_set_type_id": "监测报警简单查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "code",
+		"alias": "监测设备编号",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "installation_location",
+		"alias": "安装位置",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "monitoring_object",
+		"alias": "监测对象",
+		"type": "SimilarFilteringItem"
+	}],
+	"create_date_time": 1569830095032,
+	"update_date_time": 1569830095032
+}

@@ -1,27 +1,49 @@
-const fields = [
-    {"name": "*管道编号", "id": "pipeId", ss: true, disabled: true },
-    {"name": "*管点编号", "id": "pipeCode", disabled: true, sort: true, col: true},
-    {"name": "*管网类型", "id": "pipeNetworkType", disabled: true, sort: true, col: true},
-    {"name": "*管点类型", "id": "tubeType", disabled: true, sort: true, col: true},
-    {"name": "*标准代码", "id": "standardCode", disabled: true},
-    {"name": "*所在道路", "id": "roadName", disabled: true, sort: true, col: true},
-    {"name": "位置", "id": "location", col: true},
-    {"name": "所属服务区", "id": "belongsToTheServiceArea"},
-    {"name": "地面高程", "id": "groundElevation"},
-    {"name": "埋深", "id": "buriedDepth"},
-    {"name": "维护次数", "id": "maintainTheNumberOf"},
-    {"name": "当前状态", "id": "currentState", sort: true, as: true, col: true, type: 'dictSelector', data: 'UPNetwork_currentState'},
-    {"name": "*埋没日期", "id": "ownershipUnit", type: 'date', ss: true, as: true, col: true},
-    {"name": "*使用年限", "id": "contacter"},
-    {"name": "*权属单位", "id": "unitConnectionWay", type: 'dictSelector', data: 'UPNetwork_ownershipUnits', ss: true, as: true, col: true},
-    {"name": "单位联系人", "id": "partition"},
-    {"name": "单位联系方式", "id": "numberOfMaintenance"},
+
+const jsgx = [
+    {"name": "*管线编码", "id": "pipeId", disabled: true },
+    {"name": "*管线编号", "id": "pipeCode", col: true, ss: true, sort: true, disabled: true },
+    {"name": "*管网类型", "id": "pipeNetworkType", col: true, sort: true, disabled: true },
+    {"name": "*管线管点分类名称", "id": "linePipeCategoryName", col: true, sort: true, disabled: true },
+    {"name": "*标准代码", "id": "standardCode", disabled: true },
+    {"name": "*所在道路", "id": "roadName", col: true, sort: true, as: true, disabled: true },
+    {"name": "*起点号", "id": "startId", col: true, ss: true, sort: true, disabled: true },
+    {"name": "*终点号", "id": "endId", col: true, ss: true, sort: true, disabled: true },
+    {"name": "*起点埋深", "id": "startPointDepth", col: true, disabled: true },
+    {"name": "*终点埋深", "id": "endPointDepth", col: true, disabled: true },
+    {"name": "*起点管顶高程", "id": "endTopElevation", disabled: true },
+    {"name": "*终点管顶高程", "id": "startTopElevation", disabled: true },
+    {"name": "*管径", "id": "sectionCaliber", col: true, disabled: true },
+    {"name": "*材质", "id": "material", col: true, sort: true, as: true, type: 'dictSelector', data: 'UPNetwork_powerLineMaterial', disabled: true },
+    {"name": "*管长（m）", "id": "length", col: true, disabled: true },
+    {"name": "*前点编号", "id": "wereNumbered"},
+    {"name": "*后点编号", "id": "afterPointNumber"},
+    {"name": "*是否是上游第一点", "id": "upstreamIsTheFirstPoint"},
+    {"name": "*敷设方式", "id": "embedmentType", col: true, sort: true, as: true, type: 'dictSelector', data: 'UPNetwork_currentState'},
+    {"name": "*敷设日期", "id": "embedmentTime", as: true, type: 'date'},
+    {"name": "*使用年限", "id": "useFixedNumberOfYear"},
+    {"name": "当前状态", "id": "currentState", as: true},
+    {"name": "*权属单位", "id": "ownershipUnit", as: true, type: 'dictSelector', data: 'UPNetwork_ownershipUnits'},
+    {"name": "单位联系人", "id": "unitConnectionPerson"},
+    {"name": "单位联系方式", "id": "unitConnectionWay"},
+    {"name": "所在分区", "id": "partition"},
+    {"name": "维修次数", "id": "numberOfMaintenance"},
     {"name": "施工单位", "id": "constructionUnit"},
     {"name": "设计单位", "id": "designUnits"},
-    {"name": "*是否监测", "id": "whetherMonitoring", type: 'dictRadio', data: 'UPNetwork_whetherTheMonitoring'},
     {"name": "坐标", "id": "position"},
-    {"name": "备注", "id": "remark"}
+    {"name": "*是否监测", "id": "whetherMonitoring", type: 'dictRadio', data: 'UPNetwork_whetherTheMonitoring'},
+
+    {"name": "流向", "id": "flow", col: true},
+    {"name": "供水性质", "id": "natureOfTheWater", col: true},
+    {"name": "通水日期", "id": "waterDate", col: true, type: 'date'},
+
+    {"name": "备注", "id": "remark"},
 ]
+
+buildForm(jsgx, 'UPNetwork_JS_Tubulation', '给水管线')
+buildTable(jsgx, 'UPNetwork_JS_Tubulation', '给水管线')
+buildSimpleSearch(jsgx, 'UPNetwork_JS_Tubulation', '给水管线')
+buildAdvanceSearch(jsgx, 'UPNetwork_JS_Tubulation', '给水管线')
+
 
 function getFormItems({ name, id, type = 'nomal', data, disabled = false }) {
     const options = name === '备注' ?

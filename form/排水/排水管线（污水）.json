@@ -7,7 +7,7 @@
 			"id": "pipeId",
 			"name": "pipeId",
 			"displayName": "管线编码",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -24,7 +24,7 @@
 			"id": "pipeCode",
 			"name": "pipeCode",
 			"displayName": "管线编号",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -41,7 +41,7 @@
 			"id": "pipeNetworkType",
 			"name": "pipeNetworkType",
 			"displayName": "管网类型",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -58,7 +58,7 @@
 			"id": "linePipeCategoryName",
 			"name": "linePipeCategoryName",
 			"displayName": "管线管点分类名称",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -75,7 +75,7 @@
 			"id": "standardCode",
 			"name": "standardCode",
 			"displayName": "标准代码",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -92,7 +92,7 @@
 			"id": "roadName",
 			"name": "roadName",
 			"displayName": "所在道路",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -109,7 +109,7 @@
 			"id": "startId",
 			"name": "startId",
 			"displayName": "起点号",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -126,7 +126,7 @@
 			"id": "endId",
 			"name": "endId",
 			"displayName": "终点号",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -143,7 +143,7 @@
 			"id": "startPointDepth",
 			"name": "startPointDepth",
 			"displayName": "起点埋深",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -160,7 +160,7 @@
 			"id": "endPointDepth",
 			"name": "endPointDepth",
 			"displayName": "终点埋深",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -177,7 +177,7 @@
 			"id": "endTopElevation",
 			"name": "endTopElevation",
 			"displayName": "起点管顶高程",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -194,7 +194,7 @@
 			"id": "startTopElevation",
 			"name": "startTopElevation",
 			"displayName": "终点管顶高程",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -211,7 +211,7 @@
 			"id": "sectionCaliber",
 			"name": "sectionCaliber",
 			"displayName": "管径",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -228,7 +228,7 @@
 			"id": "material",
 			"name": "material",
 			"displayName": "材质",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -247,7 +247,7 @@
 			"id": "length",
 			"name": "length",
 			"displayName": "管长（m）",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -264,7 +264,7 @@
 			"id": "wereNumbered",
 			"name": "wereNumbered",
 			"displayName": "前点编号",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -281,7 +281,7 @@
 			"id": "afterPointNumber",
 			"name": "afterPointNumber",
 			"displayName": "后点编号",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -298,7 +298,7 @@
 			"id": "upstreamIsTheFirstPoint",
 			"name": "upstreamIsTheFirstPoint",
 			"displayName": "是否是上游第一点",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -315,7 +315,7 @@
 			"id": "embedmentType",
 			"name": "embedmentType",
 			"displayName": "敷设方式",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -334,7 +334,7 @@
 			"id": "embedmentTime",
 			"name": "embedmentTime",
 			"displayName": "敷设日期",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -352,7 +352,7 @@
 			"id": "useFixedNumberOfYear",
 			"name": "useFixedNumberOfYear",
 			"displayName": "使用年限",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -386,7 +386,7 @@
 			"id": "ownershipUnit",
 			"name": "ownershipUnit",
 			"displayName": "权属单位",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -402,8 +402,8 @@
 				"dictName": "UPNetwork_ownershipUnits"
 			}
 		}, {
-			"id": "",
-			"name": "",
+			"id": "unitConnectionPerson",
+			"name": "unitConnectionPerson",
 			"displayName": "单位联系人",
 			"required": false,
 			"formItemOptions": {
@@ -524,7 +524,7 @@
 			"id": "whetherMonitoring",
 			"name": "whetherMonitoring",
 			"displayName": "是否监测",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -539,6 +539,23 @@
 			"componentProps": {
 				"dictName": "UPNetwork_whetherTheMonitoring"
 			}
+		}, {
+			"id": "flow",
+			"name": "flow",
+			"displayName": "流向",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
 		}, {
 			"id": "remark",
 			"name": "remark",
@@ -665,6 +682,9 @@
 		}, {
 			"whetherMonitoring": {
 				"span": 12
+			},
+			"flow": {
+				"span": 12
 			}
 		}, {
 			"remark": {
@@ -672,6 +692,6 @@
 			}
 		}]
 	},
-	"create_date_time": 1568242841803,
-	"update_date_time": 1568242841803
+	"create_date_time": 1568256243929,
+	"update_date_time": 1568256243929
 }

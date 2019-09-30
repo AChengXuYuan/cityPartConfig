@@ -1,0 +1,59 @@
+{
+	"name": "MANG_EmergenciesInternetOfThingsEquipment_table",
+	"property_set_type_id": "物联网设备表格展示view",
+	"is_base": 1,
+	"properties": [{
+		"name": "code",
+		"alias": "监测设备编号",
+		"sort": false
+	}, {
+		"name": "installationLocation",
+		"alias": " 安装位置",
+		"sort": false
+	}, {
+		"name": "Road",
+		"alias": "所在道路",
+		"sort": true,
+		"convert": {
+			"type": "dict",
+			"data": "InternetOfThingsEquipment_Road"
+		}
+	}, {
+		"name": "installationDate",
+		"alias": "安装日期",
+		"sort": true,
+		"convert": {
+			"type": "date"
+		}
+	}, {
+		"name": "administration",
+		"alias": "主管部门",
+		"sort": true
+	}, {
+		"name": "ownershipUnit",
+		"alias": "权属单位",
+		"sort": true,
+		"convert": {
+			"type": "dict",
+			"data": "InternetOfThingsEquipment_OwnershipUnit"
+		}
+	}, {
+		"name": "size",
+		"alias": " 尺寸",
+		"sort": false
+	}, {
+		"name": "model",
+		"alias": " 型号",
+		"sort": false
+	}, {
+		"name": "equipmentStatus",
+		"alias": "设备状态",
+		"sort": true,
+		"convert": {
+			"type": "dict",
+			"data": "InternetOfThingsEquipment_EquipmentStatus"
+		}
+	}],
+	"create_date_time": 1569219383114,
+	"update_date_time": 1569219383114
+}

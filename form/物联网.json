@@ -1,0 +1,587 @@
+{
+	"name": "MANG_EmergenciesInternetOfThingsEquipment_forom",
+	"property_set_type_id": "物联网设备表单view",
+	"is_base": 1,
+	"properties": {
+	  "formItems": [
+		{
+		  "id": "code",
+		  "name": "code",
+		  "displayName": "监测设备编号",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "installationLocation",
+		  "name": "installationLocation",
+		  "displayName": " 安装位置",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "businessClassName",
+		  "name": "businessClassName",
+		  "displayName": "业务大类名称",
+		  "relateItem":[{
+			"field": "monitoringObjectType",
+			"passValuePropKey": "nodeName"
+		  }],
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "monitoringObjectType",
+		  "name": "monitoringObjectType",
+		  "displayName": "监测对象类型",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "DictSelector",
+		  "componentProps": {
+			"dictName": "InternetOfThingsEquipment_MonitoringObjectType"
+		  }
+		},
+		{
+		  "id": "monitoringObject",
+		  "name": "monitoringObject",
+		  "displayName": "监测对象",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "ColumnSelect",
+		  "componentProps": {
+			  
+		  }
+		},
+		{
+		  "id": "Road",
+		  "name": "Road",
+		  "displayName": "所在道路",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "DictSelector",
+		  "componentProps": {
+			"dictName": "InternetOfThingsEquipment_Road"
+		  }
+		},
+		{
+		  "id": " poleOrBoxOrGalleryOrDitchOrWell",
+		  "name": " poleOrBoxOrGalleryOrDitchOrWell",
+		  "displayName": "所在杆/箱/廊/沟/井",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "installationDate",
+		  "name": "installationDate",
+		  "displayName": "安装日期",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "datePicker",
+		  "componentProps": {},
+		  "dataType": "date"
+		},
+		{
+		  "id": "yearsOfUse",
+		  "name": "yearsOfUse",
+		  "displayName": "使用年限",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "administration",
+		  "name": "administration",
+		  "displayName": "主管部门",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "ownershipUnit",
+		  "name": "ownershipUnit",
+		  "displayName": "权属单位",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "DictSelector",
+		  "componentProps": {
+			"dictName": "InternetOfThingsEquipment_OwnershipUnit"
+		  }
+		},
+		{
+		  "id": "maintenanceUnit",
+		  "name": "maintenanceUnit",
+		  "displayName": "养护单位",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "administrativeDivision",
+		  "name": "administrativeDivision",
+		  "displayName": "所属行政区划",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "cellGrid",
+		  "name": "cellGrid",
+		  "displayName": "所在单元网格",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "roadSide",
+		  "name": "roadSide",
+		  "displayName": "所在路侧",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "DictSelector",
+		  "componentProps": {
+			"dictName": "InternetOfThingsEquipment_RoadSide"
+		  }
+		},
+		{
+		  "id": "size",
+		  "name": "size",
+		  "displayName": " 尺寸",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "model",
+		  "name": "model",
+		  "displayName": " 型号",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "manufacturer",
+		  "name": "manufacturer",
+		  "displayName": "生产厂商",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "equipmentStatus",
+		  "name": "equipmentStatus",
+		  "displayName": "设备状态",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "DictSelector",
+		  "componentProps": {
+			"dictName": "InternetOfThingsEquipment_EquipmentStatus"
+		  }
+		},
+		{
+		  "id": "onlineStatus",
+		  "name": "onlineStatus",
+		  "displayName": "在线状态",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "DictSelector",
+		  "componentProps": {
+			"dictName": "InternetOfThingsEquipment_OnlineStatus"
+		  }
+		},
+		{
+		  "id": "positionCoordinates",
+		  "name": "positionCoordinates",
+		  "displayName": "位置坐标",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "QRCode",
+		  "name": "QRCode",
+		  "displayName": "二维码",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "MinioFilesAutoUpload",
+		  "componentProps": {
+			"bucket": "majorproject"
+		  }
+		},
+		{
+		  "id": "equipmentPictures",
+		  "name": "equipmentPictures",
+		  "displayName": "设备图片",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "MinioFilesAutoUpload",
+		  "componentProps": {
+			"bucket": "majorproject"
+		  }
+		},
+		{
+		  "id": "dataSources",
+		  "name": "dataSources",
+		  "displayName": "数据来源",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "remarks",
+		  "name": "remarks",
+		  "displayName": "备注",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 4
+			},
+			"wrapperCol": {
+			  "span": 20
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		}
+	  ],
+	  "formLayout": [
+		{
+		  "code": {
+			"span": 12
+		  },
+		  "installationLocation": {
+			"span": 12
+		  }
+		},
+		{
+		  "businessClassName": {
+			"span": 12
+		  },
+		  "monitoringObjectType": {
+			"span": 12
+		  }
+		},
+		{
+		  "monitoringObject": {
+			"span": 12
+		  },
+		  "Road": {
+			"span": 12
+		  }
+		},
+		{
+		  " poleOrBoxOrGalleryOrDitchOrWell": {
+			"span": 12
+		  },
+		  "installationDate": {
+			"span": 12
+		  }
+		},
+		{
+		  "yearsOfUse": {
+			"span": 12
+		  },
+		  "administration": {
+			"span": 12
+		  }
+		},
+		{
+		  "ownershipUnit": {
+			"span": 12
+		  },
+		  "maintenanceUnit": {
+			"span": 12
+		  }
+		},
+		{
+		  "administrativeDivision": {
+			"span": 12
+		  },
+		  "cellGrid": {
+			"span": 12
+		  }
+		},
+		{
+		  "roadSide": {
+			"span": 12
+		  },
+		  "size": {
+			"span": 12
+		  }
+		},
+		{
+		  "model": {
+			"span": 12
+		  },
+		  "manufacturer": {
+			"span": 12
+		  }
+		},
+		{
+		  "equipmentStatus": {
+			"span": 12
+		  },
+		  "onlineStatus": {
+			"span": 12
+		  }
+		},
+		{
+		  "positionCoordinates": {
+			"span": 12
+		  },
+		  "dataSources": {
+			"span": 12
+		  }
+		},
+		{
+		  "equipmentPictures": {
+			"span": 12
+		  },
+		  "QRCode": {
+			"span": 12
+		  }
+		},
+		{
+		  "remarks": {
+			"span": 24
+		  }
+		}
+	  ]
+	},
+	"create_date_time": 1569219383113,
+	"update_date_time": 1569219383113
+  }

@@ -1,6 +1,6 @@
 {
-	"name": "UPNetwork_JS_FM_Point",
-	"property_set_type_id": "给水阀门view",
+	"name": "UPNetwork_JS_FM_Point_table",
+	"property_set_type_id": "给水阀门表格展示view",
 	"is_base": 1,
 	"properties": [{
 		"name": "pipeCode",
@@ -23,10 +23,6 @@
 		"alias": "位置",
 		"sort": false
 	}, {
-		"name": "buriedDepth",
-		"alias": "埋深",
-		"sort": false
-	}, {
 		"name": "currentState",
 		"alias": "当前状态",
 		"sort": false,
@@ -44,8 +40,20 @@
 	}, {
 		"name": "unitConnectionWay",
 		"alias": "权属单位",
+		"sort": false,
+		"convert": {
+			"type": "dict",
+			"data": "UPNetwork_ownershipUnits"
+		}
+	}, {
+		"name": "wellId",
+		"alias": "所在窨井",
+		"sort": false
+	}, {
+		"name": "role",
+		"alias": "作用",
 		"sort": false
 	}],
-	"create_date_time": 1568222228898,
-	"update_date_time": 1568222228898
+	"create_date_time": 1568262538403,
+	"update_date_time": 1568262538403
 }

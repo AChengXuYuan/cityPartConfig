@@ -1,71 +1,79 @@
 {
 	"name": "UPNetwork_JS_Tubulation_table",
-	"property_set_type_id": "表格展示",
+	"property_set_type_id": "给水管线表格展示view",
 	"is_base": 1,
-	"properties": [
-		{
-			"name": "pipeId",
-			"alias": "管线编号",
-			"sort": true
-		},
-		{
-			"name": "roadName",
-			"alias": "所在道路",
-			"sort": true
-			
-		},
-		{
-			"name": "pipeNetworkType",
-			"alias": "管网类型",
-			"sort": true
-		},
-		{
-			"name": "linePipeCategoryName",
-			"alias": "管线分类名称",
-			"sort": true
-		},
-		{
-			"name": "startId",
-			"alias": "起点物探点号",
-			"sort": true
-		},
-		{
-			"name": "endId",
-            "alias": "终点物探点号",
-			"sort": true
-        },
-        {
-			"name": "startPointDepth",
-            "alias": "起点埋深",
-            "dict": "istcditc"
-        },
-        {
-			"name": "endPointDepth",
-            "alias": "终点埋深"
-        },
-        {
-			"name": "materia",
-            "alias": "管线材质",
-            "dict": "UPNetwork_waterSupplyPipelineMaterial",
-			"sort": true
-		},
-		{
-			"name": "sectionCaliber",
-            "alias": "管径（断面）",
-            "dict": "dictunit"
-		},
-		{
-			"name": "length",
-            "alias": "管长（m）",
-            "dict": "dictunit"
-		},
-		{
-			"name": "embedmentType",
-            "alias": "敷设方式",
-            "dict": "UPNetwork_layingWay",
-			"sort": true
+	"properties": [{
+		"name": "pipeCode",
+		"alias": "管线编号",
+		"sort": true
+	}, {
+		"name": "pipeNetworkType",
+		"alias": "管网类型",
+		"sort": true
+	}, {
+		"name": "linePipeCategoryName",
+		"alias": "管线管点分类名称",
+		"sort": true
+	}, {
+		"name": "roadName",
+		"alias": "所在道路",
+		"sort": true
+	}, {
+		"name": "startId",
+		"alias": "起点号",
+		"sort": true
+	}, {
+		"name": "endId",
+		"alias": "终点号",
+		"sort": true
+	}, {
+		"name": "startPointDepth",
+		"alias": "起点埋深",
+		"sort": false
+	}, {
+		"name": "endPointDepth",
+		"alias": "终点埋深",
+		"sort": false
+	}, {
+		"name": "sectionCaliber",
+		"alias": "管径",
+		"sort": false
+	}, {
+		"name": "material",
+		"alias": "材质",
+		"sort": true,
+		"convert": {
+			"type": "dict",
+			"data": "UPNetwork_powerLineMaterial"
 		}
-	],
-	"create_date_time": 1538097510556,
-	"update_date_time": 1538097510556
+	}, {
+		"name": "length",
+		"alias": "管长（m）",
+		"sort": false
+	}, {
+		"name": "embedmentType",
+		"alias": "敷设方式",
+		"sort": true,
+		"convert": {
+			"type": "dict",
+			"data": "UPNetwork_currentState"
+		}
+	}, {
+		"name": "flow",
+		"alias": "流向",
+		"sort": false
+	}, {
+		"name": "natureOfTheWater",
+		"alias": "供水性质",
+		"sort": false
+	}, {
+		"name": "waterDate",
+		"alias": "通水日期",
+		"sort": false,
+		"convert": {
+			"type": "date"
+		}
+	}],
+	"create_date_time": 1568263853091,
+	"update_date_time": 1568263853091
 }

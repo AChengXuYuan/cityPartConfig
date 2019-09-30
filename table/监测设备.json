@@ -1,0 +1,59 @@
+{
+	"name": "moniter_advice_table",
+	"property_set_type_id": "监测报警表格展示view",
+	"is_base": 1,
+	"properties": [{
+		"name": "code",
+		"alias": "监测设备编号",
+		"sort": true
+	}, {
+		"name": "installation_location",
+		"alias": "安装位置",
+		"sort": false
+	}, {
+		"name": "monitoring_object_type",
+		"alias": "监测对象类型",
+		"sort": false
+	}, {
+		"name": "monitoring_object",
+		"alias": "监测对象",
+		"sort": false
+	}, {
+		"name": "Road",
+		"alias": "所在道路",
+		"sort": false,
+		"convert": {
+			"type": "dict",
+			"data": "InternetOfThingsEquipment_Road"
+		}
+	}, {
+		"name": "pole_or_box_or_gallery_or_ditch_or_well",
+		"alias": "所在杆/箱/廊/沟/井",
+		"sort": false
+	}, {
+		"name": "item",
+		"alias": "检测指标代码",
+		"sort": false
+	}, {
+		"name": "item_value",
+		"alias": "检测值",
+		"sort": false
+	}, {
+		"name": "time",
+		"alias": "时间",
+		"sort": false,
+		"convert": {
+			"type": "date"
+		}
+	}, {
+		"name": "state",
+		"alias": "状态",
+		"sort": false
+	}, {
+		"name": "level_name",
+		"alias": "报警等级",
+		"sort": false
+	}],
+	"create_date_time": 1569830095032,
+	"update_date_time": 1569830095032
+}

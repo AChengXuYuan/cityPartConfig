@@ -1,13 +1,13 @@
 {
-	"name": "UPNetwork_JS_FM_Point",
-	"property_set_type_id": "给水阀门view",
+	"name": "UPNetwork_JS_FM_Point_from",
+	"property_set_type_id": "给水阀门表单view",
 	"is_base": 1,
 	"properties": {
 		"formItems": [{
 			"id": "pipeId",
 			"name": "pipeId",
 			"displayName": "管点编码",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -16,7 +16,7 @@
 					"span": 16
 				}
 			},
-			"disabled": false,
+			"disabled": true,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -33,7 +33,7 @@
 					"span": 16
 				}
 			},
-			"disabled": false,
+			"disabled": true,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -50,7 +50,7 @@
 					"span": 16
 				}
 			},
-			"disabled": false,
+			"disabled": true,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -67,7 +67,7 @@
 					"span": 16
 				}
 			},
-			"disabled": false,
+			"disabled": true,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -84,7 +84,7 @@
 					"span": 16
 				}
 			},
-			"disabled": false,
+			"disabled": true,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -101,7 +101,7 @@
 					"span": 16
 				}
 			},
-			"disabled": false,
+			"disabled": true,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -259,8 +259,10 @@
 			},
 			"disabled": false,
 			"visible": true,
-			"component": "input",
-			"componentProps": {}
+			"component": "DictSelector",
+			"componentProps": {
+				"dictName": "UPNetwork_ownershipUnits"
+			}
 		}, {
 			"id": "partition",
 			"name": "partition",
@@ -293,10 +295,8 @@
 			},
 			"disabled": false,
 			"visible": true,
-			"component": "DictSelector",
-			"componentProps": {
-				"dictName": "UPNetwork_ownershipUnits"
-			}
+			"component": "input",
+			"componentProps": {}
 		}, {
 			"id": "constructionUnit",
 			"name": "constructionUnit",
@@ -354,6 +354,176 @@
 			"id": "position",
 			"name": "position",
 			"displayName": "坐标",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "wellId",
+			"name": "wellId",
+			"displayName": "所在窨井",
+			"required": true,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "valveType",
+			"name": "valveType",
+			"displayName": "阀门类型",
+			"required": true,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "caliber",
+			"name": "caliber",
+			"displayName": "口径",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "manufacturers",
+			"name": "manufacturers",
+			"displayName": "生产厂商",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "model",
+			"name": "model",
+			"displayName": "型号",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "role",
+			"name": "role",
+			"displayName": "作用",
+			"required": true,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "rotationDirection",
+			"name": "rotationDirection",
+			"displayName": "转动方向",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "shutOffTheDirection",
+			"name": "shutOffTheDirection",
+			"displayName": "关断方向",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "switchState",
+			"name": "switchState",
+			"displayName": "开关状态",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "allRevolutions",
+			"name": "allRevolutions",
+			"displayName": "全开转数",
 			"required": false,
 			"formItemOptions": {
 				"labelCol": {
@@ -458,6 +628,41 @@
 		}, {
 			"position": {
 				"span": 12
+			},
+			"wellId": {
+				"span": 12
+			}
+		}, {
+			"valveType": {
+				"span": 12
+			},
+			"caliber": {
+				"span": 12
+			}
+		}, {
+			"manufacturers": {
+				"span": 12
+			},
+			"model": {
+				"span": 12
+			}
+		}, {
+			"role": {
+				"span": 12
+			},
+			"rotationDirection": {
+				"span": 12
+			}
+		}, {
+			"shutOffTheDirection": {
+				"span": 12
+			},
+			"switchState": {
+				"span": 12
+			}
+		}, {
+			"allRevolutions": {
+				"span": 12
 			}
 		}, {
 			"remark": {
@@ -465,6 +670,6 @@
 			}
 		}]
 	},
-	"create_date_time": 1568222158090,
-	"update_date_time": 1568222158090
+	"create_date_time": 1568262538402,
+	"update_date_time": 1568262538402
 }

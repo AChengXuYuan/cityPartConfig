@@ -1,6 +1,4 @@
-UPNetwork_RQ_RQYJ_Point
-
-const psgj = [
+const psbz = [
     {"name": "*管点编码", "id": "pipeId", disabled: true },
     {"name": "*管点编号", "id": "pipeCode", col: true, ss: true, sort: true, disabled: true },
     {"name": "*管网类型", "id": "pipeNetworkType", col: true, sort: true, disabled: true },
@@ -22,15 +20,5 @@ const psgj = [
     {"name": "设计单位", "id": "designUnits"},
     {"name": "*是否监测", "id": "whetherMonitoring", type: 'dictRadio', data: 'UPNetwork_whetherTheMonitoring'},
     {"name": "坐标", "id": "position"},
-
-    {"name": "井盖形状", "id": "manholeCoverShape"},
-    {"name": "井盖材质", "id": "manholeCoverMaterial"},
-    {"name": "井盖尺寸", "id": "capSize"},
-
-    {"name": "备注", "id": "remark"},    
+    {"name": "备注", "id": "remark"},   
 ]
-
-buildForm(psgj, 'UPNetwork_PS_YSJ_Point', '排水井')
-buildTable(psgj, 'UPNetwork_PS_YSJ_Point', '排水井')
-buildSimpleSearch(psgj, 'UPNetwork_PS_YSJ_Point', '排水井')
-buildAdvanceSearch(psgj, 'UPNetwork_PS_YSJ_Point', '排水井')

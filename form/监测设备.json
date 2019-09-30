@@ -1,0 +1,302 @@
+{
+	"name": "moniter_advice_from",
+	"property_set_type_id": "监测报警表单view",
+	"is_base": 1,
+	"properties": {
+		"formItems": [{
+			"id": "code",
+			"name": "code",
+			"displayName": "监测设备编号",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "installation_location",
+			"name": "installation_location",
+			"displayName": "安装位置",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "business_class_name",
+			"name": "business_class_name",
+			"displayName": "业务大类名称",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "monitoring_object_type",
+			"name": "monitoring_object_type",
+			"displayName": "监测对象类型",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "monitoring_object",
+			"name": "monitoring_object",
+			"displayName": "监测对象",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "Road",
+			"name": "Road",
+			"displayName": "所在道路",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "DictSelector",
+			"componentProps": {
+				"dictName": "InternetOfThingsEquipment_Road"
+			}
+		}, {
+			"id": "pole_or_box_or_gallery_or_ditch_or_well",
+			"name": "pole_or_box_or_gallery_or_ditch_or_well",
+			"displayName": "所在杆/箱/廊/沟/井",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "item",
+			"name": "item",
+			"displayName": "检测指标代码",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "item_name",
+			"name": "item_name",
+			"displayName": "监测指标中文名称",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "item_value",
+			"name": "item_value",
+			"displayName": "检测值",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "time",
+			"name": "time",
+			"displayName": "时间",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "datePicker",
+			"componentProps": {},
+			"dataType": "date"
+		}, {
+			"id": "state",
+			"name": "state",
+			"displayName": "状态",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "level",
+			"name": "level",
+			"displayName": "报警等级号",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "level_name",
+			"name": "level_name",
+			"displayName": "报警等级",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}],
+		"formLayout": [{
+			"code": {
+				"span": 12
+			},
+			"installation_location": {
+				"span": 12
+			}
+		}, {
+			"business_class_name": {
+				"span": 12
+			},
+			"monitoring_object_type": {
+				"span": 12
+			}
+		}, {
+			"monitoring_object": {
+				"span": 12
+			},
+			"Road": {
+				"span": 12
+			}
+		}, {
+			"pole_or_box_or_gallery_or_ditch_or_well": {
+				"span": 12
+			},
+			"item": {
+				"span": 12
+			}
+		}, {
+			"item_name": {
+				"span": 12
+			},
+			"item_value": {
+				"span": 12
+			}
+		}, {
+			"time": {
+				"span": 12
+			},
+			"state": {
+				"span": 12
+			}
+		}, {
+			"level": {
+				"span": 12
+			}
+		}, {
+			"level_name": {
+				"span": 24
+			}
+		}]
+	},
+	"create_date_time": 1569830095031,
+	"update_date_time": 1569830095031
+}

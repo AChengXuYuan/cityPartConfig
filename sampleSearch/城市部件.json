@@ -1,0 +1,16 @@
+{
+	"name": "MANG_CityComponent_sampleSearch",
+	"property_set_type_id": "城市部件简单查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "code",
+		"alias": "部件编号",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "installationLocation",
+		"alias": " 安装位置",
+		"type": "SimilarFilteringItem"
+	}],
+	"create_date_time": 1569380491906,
+	"update_date_time": 1569380491906
+}

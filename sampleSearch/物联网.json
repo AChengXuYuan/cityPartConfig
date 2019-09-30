@@ -1,0 +1,24 @@
+{
+	"name": "MANG_EmergenciesInternetOfThingsEquipment_sampleSearch",
+	"property_set_type_id": "物联网设备简单查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "code",
+		"alias": "监测设备编号",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "installationLocation",
+		"alias": " 安装位置",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "size",
+		"alias": " 尺寸",
+		"type": "SimilarFilteringItem"
+	}, {
+		"name": "model",
+		"alias": " 型号",
+		"type": "SimilarFilteringItem"
+	}],
+	"create_date_time": 1569219383114,
+	"update_date_time": 1569219383114
+}

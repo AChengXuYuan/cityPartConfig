@@ -1,15 +1,15 @@
 {
-	"name": "UPNetwork_PS_PSBZ_Point_advanceSearch",
-	"property_set_type_id": "排水泵站高级查询view",
+	"name": "MANG_EmergenciesInternetOfThingsEquipment_advanceSearch",
+	"property_set_type_id": "物联网设备高级查询view",
 	"is_base": 1,
 	"properties": [{
-		"name": "currentState",
-		"alias": "当前状态",
+		"name": "Road",
+		"alias": "所在道路",
 		"type": "dict",
-		"convertValue": "UPNetwork_currentState"
+		"convertValue": "InternetOfThingsEquipment_Road"
 	}, {
-		"name": "ownershipUnit",
-		"alias": "埋没日期",
+		"name": "installationDate",
+		"alias": "安装日期",
 		"type": "period",
 		"convertValue": [{
 			"name": "近一月",
@@ -29,11 +29,11 @@
 			"type": "before_now"
 		}]
 	}, {
-		"name": "unitConnectionWay",
+		"name": "ownershipUnit",
 		"alias": "权属单位",
 		"type": "dict",
-		"convertValue": "UPNetwork_ownershipUnits"
+		"convertValue": "InternetOfThingsEquipment_OwnershipUnit"
 	}],
-	"create_date_time": 1568249792314,
-	"update_date_time": 1568249792314
+	"create_date_time": 1569219383114,
+	"update_date_time": 1569219383114
 }

@@ -1,12 +1,12 @@
 {
-	"name": "UPNetwork_PS_YSJ_Point_from",
-	"property_set_type_id": "排水井表单view",
+	"name": "MANG_CityComponent_from",
+	"property_set_type_id": "城市部件表单view",
 	"is_base": 1,
 	"properties": {
 		"formItems": [{
-			"id": "pipeId",
-			"name": "pipeId",
-			"displayName": "管点编码",
+			"id": "ID",
+			"name": "ID",
+			"displayName": "部件编码",
 			"required": true,
 			"formItemOptions": {
 				"labelCol": {
@@ -16,14 +16,14 @@
 					"span": 16
 				}
 			},
-			"disabled": true,
+			"disabled": false,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
 		}, {
-			"id": "pipeCode",
-			"name": "pipeCode",
-			"displayName": "管点编号",
+			"id": "code",
+			"name": "code",
+			"displayName": "部件编号",
 			"required": true,
 			"formItemOptions": {
 				"labelCol": {
@@ -33,14 +33,14 @@
 					"span": 16
 				}
 			},
-			"disabled": true,
+			"disabled": false,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
 		}, {
-			"id": "pipeNetworkType",
-			"name": "pipeNetworkType",
-			"displayName": "管网类型",
+			"id": "installationLocation",
+			"name": "installationLocation",
+			"displayName": " 安装位置",
 			"required": true,
 			"formItemOptions": {
 				"labelCol": {
@@ -50,151 +50,15 @@
 					"span": 16
 				}
 			},
-			"disabled": true,
+			"disabled": false,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
 		}, {
-			"id": "tubeType",
-			"name": "tubeType",
-			"displayName": "管点类型",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "standardCode",
-			"name": "standardCode",
-			"displayName": "标准代码",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "roadName",
-			"name": "roadName",
+			"id": "road",
+			"name": "road",
 			"displayName": "所在道路",
 			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "location",
-			"name": "location",
-			"displayName": "位置",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "belongsToTheServiceArea",
-			"name": "belongsToTheServiceArea",
-			"displayName": "所属服务区",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "groundElevation",
-			"name": "groundElevation",
-			"displayName": "地面高程",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "buriedDepth",
-			"name": "buriedDepth",
-			"displayName": "埋深",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "maintainTheNumberOf",
-			"name": "maintainTheNumberOf",
-			"displayName": "维护次数",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "currentState",
-			"name": "currentState",
-			"displayName": "当前状态",
-			"required": false,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -207,12 +71,12 @@
 			"visible": true,
 			"component": "DictSelector",
 			"componentProps": {
-				"dictName": "UPNetwork_currentState"
+				"dictName": "InternetOfThingsEquipment_Road"
 			}
 		}, {
-			"id": "ownershipUnit",
-			"name": "ownershipUnit",
-			"displayName": "埋没日期",
+			"id": "installationDate",
+			"name": "installationDate",
+			"displayName": "安装日期",
 			"required": true,
 			"formItemOptions": {
 				"labelCol": {
@@ -228,8 +92,8 @@
 			"componentProps": {},
 			"dataType": "date"
 		}, {
-			"id": "contacter",
-			"name": "contacter",
+			"id": "yearsOfUse",
+			"name": "yearsOfUse",
 			"displayName": "使用年限",
 			"required": true,
 			"formItemOptions": {
@@ -245,8 +109,25 @@
 			"component": "input",
 			"componentProps": {}
 		}, {
-			"id": "unitConnectionWay",
-			"name": "unitConnectionWay",
+			"id": "administration",
+			"name": "administration",
+			"displayName": "主管部门",
+			"required": true,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "ownershipUnit",
+			"name": "ownershipUnit",
 			"displayName": "权属单位",
 			"required": true,
 			"formItemOptions": {
@@ -261,12 +142,29 @@
 			"visible": true,
 			"component": "DictSelector",
 			"componentProps": {
-				"dictName": "UPNetwork_ownershipUnits"
+				"dictName": "InternetOfThingsEquipment_OwnershipUnit"
 			}
 		}, {
-			"id": "partition",
-			"name": "partition",
-			"displayName": "单位联系人",
+			"id": "maintenanceUnit",
+			"name": "maintenanceUnit",
+			"displayName": "养护单位",
+			"required": true,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "administrativeDivision",
+			"name": "administrativeDivision",
+			"displayName": "所属行政区划",
 			"required": false,
 			"formItemOptions": {
 				"labelCol": {
@@ -281,9 +179,9 @@
 			"component": "input",
 			"componentProps": {}
 		}, {
-			"id": "numberOfMaintenance",
-			"name": "numberOfMaintenance",
-			"displayName": "单位联系方式",
+			"id": "cellGrid",
+			"name": "cellGrid",
+			"displayName": "所在单元网格",
 			"required": false,
 			"formItemOptions": {
 				"labelCol": {
@@ -298,9 +196,28 @@
 			"component": "input",
 			"componentProps": {}
 		}, {
-			"id": "constructionUnit",
-			"name": "constructionUnit",
-			"displayName": "施工单位",
+			"id": "roadSide",
+			"name": "roadSide",
+			"displayName": "所在路侧",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "DictSelector",
+			"componentProps": {
+				"dictName": "InternetOfThingsEquipment_RoadSide"
+			}
+		}, {
+			"id": "size",
+			"name": "size",
+			"displayName": " 尺寸",
 			"required": false,
 			"formItemOptions": {
 				"labelCol": {
@@ -315,9 +232,9 @@
 			"component": "input",
 			"componentProps": {}
 		}, {
-			"id": "designUnits",
-			"name": "designUnits",
-			"displayName": "设计单位",
+			"id": "model",
+			"name": "model",
+			"displayName": " 型号",
 			"required": false,
 			"formItemOptions": {
 				"labelCol": {
@@ -332,8 +249,82 @@
 			"component": "input",
 			"componentProps": {}
 		}, {
-			"id": "whetherMonitoring",
-			"name": "whetherMonitoring",
+			"id": "status",
+			"name": "status",
+			"displayName": " 状态",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "DictSelector",
+			"componentProps": {
+				"dictName": "InternetOfThingsEquipment_EquipmentStatus"
+			}
+		}, {
+			"id": "positionCoordinates",
+			"name": "positionCoordinates",
+			"displayName": "位置坐标",
+			"required": true,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "QRCode",
+			"name": "QRCode",
+			"displayName": "二维码",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "MinioFilesAutoUpload",
+			"componentProps": {
+				"bucket": "majorproject"
+			}
+		}, {
+			"id": "pictures",
+			"name": "pictures",
+			"displayName": "设备图片",
+			"required": true,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "MinioFilesAutoUpload",
+			"componentProps": {
+				"bucket": "majorproject"
+			}
+		}, {
+			"id": "monitor",
+			"name": "monitor",
 			"displayName": "是否监测",
 			"required": true,
 			"formItemOptions": {
@@ -351,9 +342,9 @@
 				"dictName": "UPNetwork_whetherTheMonitoring"
 			}
 		}, {
-			"id": "position",
-			"name": "position",
-			"displayName": "坐标",
+			"id": "dataSources",
+			"name": "dataSources",
+			"displayName": "数据来源",
 			"required": false,
 			"formItemOptions": {
 				"labelCol": {
@@ -368,59 +359,8 @@
 			"component": "input",
 			"componentProps": {}
 		}, {
-			"id": "manholeCoverShape",
-			"name": "manholeCoverShape",
-			"displayName": "井盖形状",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "manholeCoverMaterial",
-			"name": "manholeCoverMaterial",
-			"displayName": "井盖材质",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "capSize",
-			"name": "capSize",
-			"displayName": "井盖尺寸",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "remark",
-			"name": "remark",
+			"id": "remarks",
+			"name": "remarks",
 			"displayName": "备注",
 			"required": false,
 			"formItemOptions": {
@@ -437,95 +377,81 @@
 			"componentProps": {}
 		}],
 		"formLayout": [{
-			"pipeId": {
+			"ID": {
 				"span": 12
 			},
-			"pipeCode": {
+			"code": {
 				"span": 12
 			}
 		}, {
-			"pipeNetworkType": {
+			"installationLocation": {
 				"span": 12
 			},
-			"tubeType": {
+			"road": {
 				"span": 12
 			}
 		}, {
-			"standardCode": {
+			"installationDate": {
 				"span": 12
 			},
-			"roadName": {
+			"yearsOfUse": {
 				"span": 12
 			}
 		}, {
-			"location": {
+			"administration": {
 				"span": 12
 			},
-			"belongsToTheServiceArea": {
-				"span": 12
-			}
-		}, {
-			"groundElevation": {
-				"span": 12
-			},
-			"buriedDepth": {
-				"span": 12
-			}
-		}, {
-			"maintainTheNumberOf": {
-				"span": 12
-			},
-			"currentState": {
-				"span": 12
-			}
-		}, {
 			"ownershipUnit": {
 				"span": 12
+			}
+		}, {
+			"maintenanceUnit": {
+				"span": 12
 			},
-			"contacter": {
+			"administrativeDivision": {
 				"span": 12
 			}
 		}, {
-			"unitConnectionWay": {
+			"cellGrid": {
 				"span": 12
 			},
-			"partition": {
+			"roadSide": {
 				"span": 12
 			}
 		}, {
-			"numberOfMaintenance": {
+			"size": {
 				"span": 12
 			},
-			"constructionUnit": {
+			"model": {
 				"span": 12
 			}
 		}, {
-			"designUnits": {
+			"status": {
 				"span": 12
 			},
-			"whetherMonitoring": {
+			"positionCoordinates": {
 				"span": 12
 			}
 		}, {
-			"position": {
+			"QRCode": {
 				"span": 12
 			},
-			"manholeCoverShape": {
+			"pictures": {
 				"span": 12
 			}
 		}, {
-			"manholeCoverMaterial": {
+			"monitor": {
 				"span": 12
 			},
-			"capSize": {
+			"dataSources": {
 				"span": 12
 			}
 		}, {
-			"remark": {
+			"remarks": {
 				"span": 24
 			}
 		}]
 	},
-	"create_date_time": 1568264395960,
-	"update_date_time": 1568264395960
+	"create_date_time": 1569380491905,
+	"update_date_time": 1569380491905
 }

@@ -58,7 +58,11 @@
 			"type": "dict",
 			"data": "UPNetwork_currentState"
 		}
+	}, {
+		"name": "pressureLevel",
+		"alias": "压力级别",
+		"sort": false
 	}],
-	"create_date_time": 1568227539070,
-	"update_date_time": 1568227539070
+	"create_date_time": 1568258393238,
+	"update_date_time": 1568258393238
 }

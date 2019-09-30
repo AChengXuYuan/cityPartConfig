@@ -1,5 +1,5 @@
 
-const rqgx = [
+const line = [
     {"name": "*管线编码", "id": "pipeId", disabled: true },
     {"name": "*管线编号", "id": "pipeCode", col: true, ss: true, sort: true, disabled: true },
     {"name": "*管网类型", "id": "pipeNetworkType", col: true, sort: true, disabled: true },
@@ -31,15 +31,5 @@ const rqgx = [
     {"name": "设计单位", "id": "designUnits"},
     {"name": "坐标", "id": "position"},
     {"name": "*是否监测", "id": "whetherMonitoring", type: 'dictRadio', data: 'UPNetwork_whetherTheMonitoring'},
-
-    {"name": "压力", "id": "pressure"},
-    {"name": "压力级别", "id": "pressureLevel", col: true},
-
     {"name": "备注", "id": "remark"},
 ]
-
-
-buildForm(rqgx, 'UPNetwork_RQ_Tubulation', '燃气管线')
-buildTable(rqgx, 'UPNetwork_RQ_Tubulation', '燃气管线')
-buildSimpleSearch(rqgx, 'UPNetwork_RQ_Tubulation', '燃气管线')
-buildAdvanceSearch(rqgx, 'UPNetwork_RQ_Tubulation', '燃气管线')

@@ -1,0 +1,13 @@
+{
+	"name": "moniter_advice_advanceSearch",
+	"property_set_type_id": "监测报警高级查询view",
+	"is_base": 1,
+	"properties": [{
+		"name": "Road",
+		"alias": "所在道路",
+		"type": "dict",
+		"convertValue": "InternetOfThingsEquipment_Road"
+	}],
+	"create_date_time": 1569830095033,
+	"update_date_time": 1569830095033
+}
