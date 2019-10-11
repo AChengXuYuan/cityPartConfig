@@ -4,8 +4,8 @@
 	"is_base": 1,
 	"properties": {
 		"formItems": [{
-			"id": "pipeId",
-			"name": "pipeId",
+			"id": "ID",
+			"name": "ID",
 			"displayName": "管线编码",
 			"required": true,
 			"formItemOptions": {
@@ -38,40 +38,6 @@
 			"component": "input",
 			"componentProps": {}
 		}, {
-			"id": "pipeNetworkType",
-			"name": "pipeNetworkType",
-			"displayName": "管网类型",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "linePipeCategoryName",
-			"name": "linePipeCategoryName",
-			"displayName": "管线管点分类名称",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
 			"id": "standardCode",
 			"name": "standardCode",
 			"displayName": "标准代码",
@@ -84,7 +50,7 @@
 					"span": 16
 				}
 			},
-			"disabled": true,
+			"disabled": false,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -101,7 +67,7 @@
 					"span": 16
 				}
 			},
-			"disabled": true,
+			"disabled": false,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -592,24 +558,10 @@
 			"componentProps": {}
 		}],
 		"formLayout": [{
-			"pipeId": {
+			"ID": {
 				"span": 12
 			},
 			"pipeCode": {
-				"span": 12
-			}
-		}, {
-			"pipeNetworkType": {
-				"span": 12
-			},
-			"linePipeCategoryName": {
-				"span": 12
-			}
-		}, {
-			"standardCode": {
-				"span": 12
-			},
-			"roadName": {
 				"span": 12
 			}
 		}, {
@@ -645,6 +597,13 @@
 				"span": 12
 			},
 			"wereNumbered": {
+				"span": 12
+			}
+		}, {
+			"standardCode": {
+				"span": 12
+			},
+			"roadName": {
 				"span": 12
 			}
 		}, {

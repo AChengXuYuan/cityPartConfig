@@ -1,7 +1,7 @@
 UPNetwork_DL_DLYJ_Point
 
 const dlgj = [
-    {"name": "管点编码", "id": "pipeId"},
+    {"name": "管点编码", "id": "ID"},
     {"name": "*管点编号", "id": "pipeCode", col: true, ss: true, sort: true},
     {"name": "*管网类型", "id": "pipeNetworkType", col: true, sort: true},
     {"name": "*管点类型", "id": "tubeType", col: true, sort: true},

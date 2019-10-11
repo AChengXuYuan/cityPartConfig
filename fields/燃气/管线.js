@@ -1,6 +1,6 @@
 
 const rqgx = [
-    {"name": "*管线编码", "id": "pipeId", disabled: true },
+    {"name": "*管线编码", "id": "ID", disabled: true },
     {"name": "*管线编号", "id": "pipeCode", col: true, ss: true, sort: true, disabled: true },
     {"name": "*管网类型", "id": "pipeNetworkType", col: true, sort: true, disabled: true },
     {"name": "*管线管点分类名称", "id": "linePipeCategoryName", col: true, sort: true, disabled: true },

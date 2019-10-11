@@ -3,737 +3,750 @@
 	"property_set_type_id": "给水管线表单view",
 	"is_base": 1,
 	"properties": {
-		"formItems": [{
-			"id": "pipeId",
-			"name": "pipeId",
-			"displayName": "管线编码",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
+	  "formItems": [
+		{
+		  "id": "ID",
+		  "name": "ID",
+		  "displayName": "管线编码",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "pipeCode",
-			"name": "pipeCode",
-			"displayName": "管线编号",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "pipeNetworkType",
-			"name": "pipeNetworkType",
-			"displayName": "管网类型",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "linePipeCategoryName",
-			"name": "linePipeCategoryName",
-			"displayName": "管线管点分类名称",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "standardCode",
-			"name": "standardCode",
-			"displayName": "标准代码",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "roadName",
-			"name": "roadName",
-			"displayName": "所在道路",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "startId",
-			"name": "startId",
-			"displayName": "起点号",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "endId",
-			"name": "endId",
-			"displayName": "终点号",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "startPointDepth",
-			"name": "startPointDepth",
-			"displayName": "起点埋深",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "endPointDepth",
-			"name": "endPointDepth",
-			"displayName": "终点埋深",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "endTopElevation",
-			"name": "endTopElevation",
-			"displayName": "起点管顶高程",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "startTopElevation",
-			"name": "startTopElevation",
-			"displayName": "终点管顶高程",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "sectionCaliber",
-			"name": "sectionCaliber",
-			"displayName": "管径",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "material",
-			"name": "material",
-			"displayName": "材质",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "DictSelector",
-			"componentProps": {
-				"dictName": "UPNetwork_powerLineMaterial"
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"id": "length",
-			"name": "length",
-			"displayName": "管长（m）",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "pipeCode",
+		  "name": "pipeCode",
+		  "displayName": "管线编号",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "wereNumbered",
-			"name": "wereNumbered",
-			"displayName": "前点编号",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "afterPointNumber",
-			"name": "afterPointNumber",
-			"displayName": "后点编号",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "upstreamIsTheFirstPoint",
-			"name": "upstreamIsTheFirstPoint",
-			"displayName": "是否是上游第一点",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "embedmentType",
-			"name": "embedmentType",
-			"displayName": "敷设方式",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "DictSelector",
-			"componentProps": {
-				"dictName": "UPNetwork_currentState"
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"id": "embedmentTime",
-			"name": "embedmentTime",
-			"displayName": "敷设日期",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "standardCode",
+		  "name": "standardCode",
+		  "displayName": "标准代码",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"disabled": false,
-			"visible": true,
-			"component": "datePicker",
-			"componentProps": {},
-			"dataType": "date"
-		}, {
-			"id": "useFixedNumberOfYear",
-			"name": "useFixedNumberOfYear",
-			"displayName": "使用年限",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "currentState",
-			"name": "currentState",
-			"displayName": "当前状态",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "ownershipUnit",
-			"name": "ownershipUnit",
-			"displayName": "权属单位",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "DictSelector",
-			"componentProps": {
-				"dictName": "UPNetwork_ownershipUnits"
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"id": "unitConnectionPerson",
-			"name": "unitConnectionPerson",
-			"displayName": "单位联系人",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "roadName",
+		  "name": "roadName",
+		  "displayName": "所在道路",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "unitConnectionWay",
-			"name": "unitConnectionWay",
-			"displayName": "单位联系方式",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "partition",
-			"name": "partition",
-			"displayName": "所在分区",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "numberOfMaintenance",
-			"name": "numberOfMaintenance",
-			"displayName": "维修次数",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "constructionUnit",
-			"name": "constructionUnit",
-			"displayName": "施工单位",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "designUnits",
-			"name": "designUnits",
-			"displayName": "设计单位",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "position",
-			"name": "position",
-			"displayName": "坐标",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "whetherMonitoring",
-			"name": "whetherMonitoring",
-			"displayName": "是否监测",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "DictRadio",
-			"componentProps": {
-				"dictName": "UPNetwork_whetherTheMonitoring"
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"id": "flow",
-			"name": "flow",
-			"displayName": "流向",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "startId",
+		  "name": "startId",
+		  "displayName": "起点号",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "natureOfTheWater",
-			"name": "natureOfTheWater",
-			"displayName": "供水性质",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "waterDate",
-			"name": "waterDate",
-			"displayName": "通水日期",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "datePicker",
-			"componentProps": {},
-			"dataType": "date"
-		}, {
-			"id": "remark",
-			"name": "remark",
-			"displayName": "备注",
-			"required": false,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 4
-				},
-				"wrapperCol": {
-					"span": 20
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}],
-		"formLayout": [{
-			"pipeId": {
-				"span": 12
-			},
-			"pipeCode": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"pipeNetworkType": {
-				"span": 12
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "endId",
+		  "name": "endId",
+		  "displayName": "终点号",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"linePipeCategoryName": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"standardCode": {
-				"span": 12
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "startPointDepth",
+		  "name": "startPointDepth",
+		  "displayName": "起点埋深",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"roadName": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"startId": {
-				"span": 12
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "endPointDepth",
+		  "name": "endPointDepth",
+		  "displayName": "终点埋深",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"endId": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"startPointDepth": {
-				"span": 12
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "endTopElevation",
+		  "name": "endTopElevation",
+		  "displayName": "起点管顶高程",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"endPointDepth": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"endTopElevation": {
-				"span": 12
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "startTopElevation",
+		  "name": "startTopElevation",
+		  "displayName": "终点管顶高程",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"startTopElevation": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"sectionCaliber": {
-				"span": 12
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "sectionCaliber",
+		  "name": "sectionCaliber",
+		  "displayName": "管径",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"material": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"length": {
-				"span": 12
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "material",
+		  "name": "material",
+		  "displayName": "材质",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"wereNumbered": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"afterPointNumber": {
-				"span": 12
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "DictSelector",
+		  "componentProps": {
+			"dictName": "UPNetwork_powerLineMaterial"
+		  }
+		},
+		{
+		  "id": "length",
+		  "name": "length",
+		  "displayName": "管长（m）",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"upstreamIsTheFirstPoint": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"embedmentType": {
-				"span": 12
+		  },
+		  "disabled": true,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "wereNumbered",
+		  "name": "wereNumbered",
+		  "displayName": "前点编号",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"embedmentTime": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"useFixedNumberOfYear": {
-				"span": 12
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "afterPointNumber",
+		  "name": "afterPointNumber",
+		  "displayName": "后点编号",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"currentState": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"ownershipUnit": {
-				"span": 12
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "upstreamIsTheFirstPoint",
+		  "name": "upstreamIsTheFirstPoint",
+		  "displayName": "是否是上游第一点",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"unitConnectionPerson": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"unitConnectionWay": {
-				"span": 12
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "embedmentType",
+		  "name": "embedmentType",
+		  "displayName": "敷设方式",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"partition": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"numberOfMaintenance": {
-				"span": 12
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "DictSelector",
+		  "componentProps": {
+			"dictName": "UPNetwork_layingWay"
+		  }
+		},
+		{
+		  "id": "embedmentTime",
+		  "name": "embedmentTime",
+		  "displayName": "敷设日期",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"constructionUnit": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"designUnits": {
-				"span": 12
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "datePicker",
+		  "componentProps": {},
+		  "dataType": "date"
+		},
+		{
+		  "id": "useFixedNumberOfYear",
+		  "name": "useFixedNumberOfYear",
+		  "displayName": "使用年限",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"position": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"whetherMonitoring": {
-				"span": 12
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "currentState",
+		  "name": "currentState",
+		  "displayName": "当前状态",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"flow": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"natureOfTheWater": {
-				"span": 12
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "DictSelector",
+		  "componentProps": {
+			"dictName": "UPNetwork_currentState"
+		  }
+		},
+		{
+		  "id": "ownershipUnit",
+		  "name": "ownershipUnit",
+		  "displayName": "权属单位",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
 			},
-			"waterDate": {
-				"span": 12
+			"wrapperCol": {
+			  "span": 16
 			}
-		}, {
-			"remark": {
-				"span": 24
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "DictSelector",
+		  "componentProps": {
+			"dictName": "UPNetwork_ownershipUnits"
+		  }
+		},
+		{
+		  "id": "unitConnectionPerson",
+		  "name": "unitConnectionPerson",
+		  "displayName": "单位联系人",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
 			}
-		}]
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "unitConnectionWay",
+		  "name": "unitConnectionWay",
+		  "displayName": "单位联系方式",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "partition",
+		  "name": "partition",
+		  "displayName": "所在分区",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "numberOfMaintenance",
+		  "name": "numberOfMaintenance",
+		  "displayName": "维修次数",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "constructionUnit",
+		  "name": "constructionUnit",
+		  "displayName": "施工单位",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "designUnits",
+		  "name": "designUnits",
+		  "displayName": "设计单位",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "position",
+		  "name": "position",
+		  "displayName": "坐标",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "whetherMonitoring",
+		  "name": "whetherMonitoring",
+		  "displayName": "是否监测",
+		  "required": true,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "DictRadio",
+		  "componentProps": {
+			"dictName": "UPNetwork_whetherTheMonitoring"
+		  }
+		},
+		{
+		  "id": "flow",
+		  "name": "flow",
+		  "displayName": "流向",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "propertiesOfWaterSupply",
+		  "name": "propertiesOfWaterSupply",
+		  "displayName": "供水性质",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		},
+		{
+		  "id": "waterDate",
+		  "name": "waterDate",
+		  "displayName": "通水日期",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 8
+			},
+			"wrapperCol": {
+			  "span": 16
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "datePicker",
+		  "componentProps": {},
+		  "dataType": "date"
+		},
+		{
+		  "id": "remark",
+		  "name": "remark",
+		  "displayName": "备注",
+		  "required": false,
+		  "formItemOptions": {
+			"labelCol": {
+			  "span": 4
+			},
+			"wrapperCol": {
+			  "span": 20
+			}
+		  },
+		  "disabled": false,
+		  "visible": true,
+		  "component": "input",
+		  "componentProps": {}
+		}
+	  ],
+	  "formLayout": [
+		{
+		  "ID": {
+			"span": 12
+		  },
+		  "pipeCode": {
+			"span": 12
+		  }
+		},
+		{
+		  "standardCode": {
+			"span": 12
+		  },
+		  "roadName": {
+			"span": 12
+		  }
+		},
+		{
+		  "startId": {
+			"span": 12
+		  },
+		  "endId": {
+			"span": 12
+		  }
+		},
+		{
+		  "startPointDepth": {
+			"span": 12
+		  },
+		  "endPointDepth": {
+			"span": 12
+		  }
+		},
+		{
+		  "endTopElevation": {
+			"span": 12
+		  },
+		  "startTopElevation": {
+			"span": 12
+		  }
+		},
+		{
+		  "sectionCaliber": {
+			"span": 12
+		  },
+		  "material": {
+			"span": 12
+		  }
+		},
+		{
+		  "length": {
+			"span": 12
+		  },
+		  "wereNumbered": {
+			"span": 12
+		  }
+		},
+		{
+		  "afterPointNumber": {
+			"span": 12
+		  },
+		  "upstreamIsTheFirstPoint": {
+			"span": 12
+		  }
+		},
+		{
+		  "embedmentType": {
+			"span": 12
+		  },
+		  "embedmentTime": {
+			"span": 12
+		  }
+		},
+		{
+		  "useFixedNumberOfYear": {
+			"span": 12
+		  },
+		  "currentState": {
+			"span": 12
+		  }
+		},
+		{
+		  "ownershipUnit": {
+			"span": 12
+		  },
+		  "unitConnectionPerson": {
+			"span": 12
+		  }
+		},
+		{
+		  "unitConnectionWay": {
+			"span": 12
+		  },
+		  "partition": {
+			"span": 12
+		  }
+		},
+		{
+		  "numberOfMaintenance": {
+			"span": 12
+		  },
+		  "constructionUnit": {
+			"span": 12
+		  }
+		},
+		{
+		  "designUnits": {
+			"span": 12
+		  },
+		  "position": {
+			"span": 12
+		  }
+		},
+		{
+		  "whetherMonitoring": {
+			"span": 12
+		  },
+		  "flow": {
+			"span": 12
+		  }
+		},
+		{
+		  "natureOfTheWater": {
+			"span": 12
+		  },
+		  "waterDate": {
+			"span": 12
+		  }
+		},
+		{
+		  "remark": {
+			"span": 24
+		  }
+		}
+	  ]
 	},
-	"create_date_time": 1568263853090,
-	"update_date_time": 1568263853090
-}
+	"create_date_time": 1570526218637,
+	"update_date_time": 1570526218637
+  }

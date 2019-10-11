@@ -4,10 +4,10 @@
 	"is_base": 1,
 	"properties": {
 		"formItems": [{
-			"id": "pipeId",
-			"name": "pipeId",
+			"id": "ID",
+			"name": "ID",
 			"displayName": "管点编码",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -24,40 +24,6 @@
 			"id": "pipeCode",
 			"name": "pipeCode",
 			"displayName": "管点编号",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "pipeNetworkType",
-			"name": "pipeNetworkType",
-			"displayName": "管网类型",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "tubeType",
-			"name": "tubeType",
-			"displayName": "管点类型",
 			"required": true,
 			"formItemOptions": {
 				"labelCol": {
@@ -386,17 +352,10 @@
 			"componentProps": {}
 		}],
 		"formLayout": [{
-			"pipeId": {
+			"ID": {
 				"span": 12
 			},
 			"pipeCode": {
-				"span": 12
-			}
-		}, {
-			"pipeNetworkType": {
-				"span": 12
-			},
-			"tubeType": {
 				"span": 12
 			}
 		}, {

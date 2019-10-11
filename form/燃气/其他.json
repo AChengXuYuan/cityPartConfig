@@ -4,8 +4,8 @@
 	"is_base": 1,
 	"properties": {
 		"formItems": [{
-			"id": "pipeId",
-			"name": "pipeId",
+			"id": "ID",
+			"name": "ID",
 			"displayName": "管点编码",
 			"required": false,
 			"formItemOptions": {
@@ -386,7 +386,7 @@
 			"componentProps": {}
 		}],
 		"formLayout": [{
-			"pipeId": {
+			"ID": {
 				"span": 12
 			},
 			"pipeCode": {

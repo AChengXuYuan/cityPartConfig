@@ -41,7 +41,19 @@
 		"convert": {
 			"type": "date"
 		}
+	}, {
+		"name": "unitConnectionWay",
+		"alias": "权属单位",
+		"sort": false,
+		"convert": {
+			"type": "dict",
+			"data": "UPNetwork_ownershipUnits"
+		}
+	}, {
+		"name": "manholeCoverShape",
+		"alias": "井盖形状",
+		"sort": false
 	}],
-	"create_date_time": 1568228757762,
-	"update_date_time": 1568228757762
+	"create_date_time": 1570698710284,
+	"update_date_time": 1570698710284
 }

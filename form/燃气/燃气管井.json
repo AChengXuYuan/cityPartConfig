@@ -4,10 +4,10 @@
 	"is_base": 1,
 	"properties": {
 		"formItems": [{
-			"id": "pipeId",
-			"name": "pipeId",
+			"id": "ID",
+			"name": "ID",
 			"displayName": "管点编码",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -16,7 +16,7 @@
 					"span": 16
 				}
 			},
-			"disabled": false,
+			"disabled": true,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -33,41 +33,7 @@
 					"span": 16
 				}
 			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "pipeNetworkType",
-			"name": "pipeNetworkType",
-			"displayName": "管网类型",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "tubeType",
-			"name": "tubeType",
-			"displayName": "管点类型",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": false,
+			"disabled": true,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -101,7 +67,7 @@
 					"span": 16
 				}
 			},
-			"disabled": false,
+			"disabled": true,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -259,8 +225,10 @@
 			},
 			"disabled": false,
 			"visible": true,
-			"component": "input",
-			"componentProps": {}
+			"component": "DictSelector",
+			"componentProps": {
+				"dictName": "UPNetwork_ownershipUnits"
+			}
 		}, {
 			"id": "partition",
 			"name": "partition",
@@ -293,10 +261,8 @@
 			},
 			"disabled": false,
 			"visible": true,
-			"component": "DictSelector",
-			"componentProps": {
-				"dictName": "UPNetwork_ownershipUnits"
-			}
+			"component": "input",
+			"componentProps": {}
 		}, {
 			"id": "constructionUnit",
 			"name": "constructionUnit",
@@ -368,6 +334,59 @@
 			"component": "input",
 			"componentProps": {}
 		}, {
+			"id": "manholeCoverShape",
+			"name": "manholeCoverShape",
+			"displayName": "井盖形状",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "manholeCoverMaterial",
+			"name": "manholeCoverMaterial",
+			"displayName": "井盖材质",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "DictSelector",
+			"componentProps": {
+				"dictName": "UPNetwork_manholeCoverMaterial"
+			}
+		}, {
+			"id": "capSize",
+			"name": "capSize",
+			"displayName": "井盖尺寸",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
 			"id": "remark",
 			"name": "remark",
 			"displayName": "备注",
@@ -386,17 +405,10 @@
 			"componentProps": {}
 		}],
 		"formLayout": [{
-			"pipeId": {
+			"ID": {
 				"span": 12
 			},
 			"pipeCode": {
-				"span": 12
-			}
-		}, {
-			"pipeNetworkType": {
-				"span": 12
-			},
-			"tubeType": {
 				"span": 12
 			}
 		}, {
@@ -458,6 +470,16 @@
 		}, {
 			"position": {
 				"span": 12
+			},
+			"manholeCoverShape": {
+				"span": 12
+			}
+		}, {
+			"manholeCoverMaterial": {
+				"span": 12
+			},
+			"capSize": {
+				"span": 12
 			}
 		}, {
 			"remark": {
@@ -465,6 +487,6 @@
 			}
 		}]
 	},
-	"create_date_time": 1568228707138,
-	"update_date_time": 1568228707138
+	"create_date_time": 1570698710283,
+	"update_date_time": 1570698710283
 }

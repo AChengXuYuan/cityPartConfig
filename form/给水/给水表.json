@@ -1,13 +1,13 @@
 {
 	"name": "UPNetwork_JS_SB_Point_from",
-	"property_set_type_id": "给水表表单view",
+	"property_set_type_id": "给水管井表单view",
 	"is_base": 1,
 	"properties": {
 		"formItems": [{
-			"id": "pipeId",
-			"name": "pipeId",
-			"displayName": "管道编号",
-			"required": true,
+			"id": "ID",
+			"name": "ID",
+			"displayName": "管点编码",
+			"required": false,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -16,7 +16,7 @@
 					"span": 16
 				}
 			},
-			"disabled": true,
+			"disabled": false,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -33,41 +33,7 @@
 					"span": 16
 				}
 			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "pipeNetworkType",
-			"name": "pipeNetworkType",
-			"displayName": "管网类型",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
-			"visible": true,
-			"component": "input",
-			"componentProps": {}
-		}, {
-			"id": "tubeType",
-			"name": "tubeType",
-			"displayName": "管点类型",
-			"required": true,
-			"formItemOptions": {
-				"labelCol": {
-					"span": 8
-				},
-				"wrapperCol": {
-					"span": 16
-				}
-			},
-			"disabled": true,
+			"disabled": false,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -84,7 +50,7 @@
 					"span": 16
 				}
 			},
-			"disabled": true,
+			"disabled": false,
 			"visible": true,
 			"component": "input",
 			"componentProps": {}
@@ -101,15 +67,17 @@
 					"span": 16
 				}
 			},
-			"disabled": true,
+			"disabled": false,
 			"visible": true,
-			"component": "input",
-			"componentProps": {}
+			"component": "DictSelector",
+			"componentProps": {
+				"dictName": "InternetOfThingsEquipment_Road"
+			}
 		}, {
 			"id": "location",
 			"name": "location",
 			"displayName": "位置",
-			"required": false,
+			"required": true,
 			"formItemOptions": {
 				"labelCol": {
 					"span": 8
@@ -207,7 +175,7 @@
 			"visible": true,
 			"component": "DictSelector",
 			"componentProps": {
-				"dictName": "UPNetwork_ownershipUnits"
+				"dictName": "UPNetwork_currentState"
 			}
 		}, {
 			"id": "ownershipUnit",
@@ -259,10 +227,8 @@
 			},
 			"disabled": false,
 			"visible": true,
-			"component": "DictSelector",
-			"componentProps": {
-				"dictName": "UPNetwork_ownershipUnits"
-			}
+			"component": "input",
+			"componentProps": {}
 		}, {
 			"id": "partition",
 			"name": "partition",
@@ -295,8 +261,10 @@
 			},
 			"disabled": false,
 			"visible": true,
-			"component": "input",
-			"componentProps": {}
+			"component": "DictSelector",
+			"componentProps": {
+				"dictName": "UPNetwork_ownershipUnits"
+			}
 		}, {
 			"id": "constructionUnit",
 			"name": "constructionUnit",
@@ -368,6 +336,127 @@
 			"component": "input",
 			"componentProps": {}
 		}, {
+			"id": "caliber",
+			"name": "caliber",
+			"displayName": "口径",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "manufacturers",
+			"name": "manufacturers",
+			"displayName": "生产厂商",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "model",
+			"name": "model",
+			"displayName": "型号",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "doorNumber",
+			"name": "doorNumber",
+			"displayName": "户号",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "userName",
+			"name": "userName",
+			"displayName": "用户名称",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
+			"id": "userName",
+			"name": "userName",
+			"displayName": "用水性质",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "DictSelector",
+			"componentProps": {
+				"dictName": "UPNetwork_waterUse"
+			}
+		}, {
+			"id": "waterDate",
+			"name": "waterDate",
+			"displayName": "通水日期",
+			"required": false,
+			"formItemOptions": {
+				"labelCol": {
+					"span": 8
+				},
+				"wrapperCol": {
+					"span": 16
+				}
+			},
+			"disabled": false,
+			"visible": true,
+			"component": "input",
+			"componentProps": {}
+		}, {
 			"id": "remark",
 			"name": "remark",
 			"displayName": "备注",
@@ -386,17 +475,10 @@
 			"componentProps": {}
 		}],
 		"formLayout": [{
-			"pipeId": {
+			"ID": {
 				"span": 12
 			},
 			"pipeCode": {
-				"span": 12
-			}
-		}, {
-			"pipeNetworkType": {
-				"span": 12
-			},
-			"tubeType": {
 				"span": 12
 			}
 		}, {
@@ -458,6 +540,30 @@
 		}, {
 			"position": {
 				"span": 12
+			},
+			"caliber": {
+				"span": 12
+			}
+		}, {
+			"manufacturers": {
+				"span": 12
+			},
+			"model": {
+				"span": 12
+			}
+		}, {
+			"doorNumber": {
+				"span": 12
+			},
+			"userName": {
+				"span": 12
+			}
+		}, {
+			"userName": {
+				"span": 12
+			},
+			"waterDate": {
+				"span": 12
 			}
 		}, {
 			"remark": {
@@ -465,6 +571,6 @@
 			}
 		}]
 	},
-	"create_date_time": 1568215405467,
-	"update_date_time": 1568215405467
+	"create_date_time": 1570677184589,
+	"update_date_time": 1570677184589
 }

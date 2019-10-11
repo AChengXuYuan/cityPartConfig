@@ -1,6 +1,6 @@
 {
 	"name": "UPNetwork_JS_SB_Point_table",
-	"property_set_type_id": "给水表表格展示view",
+	"property_set_type_id": "给水管井表格展示view",
 	"is_base": 1,
 	"properties": [{
 		"name": "pipeCode",
@@ -17,35 +17,40 @@
 	}, {
 		"name": "roadName",
 		"alias": "所在道路",
-		"sort": true
+		"sort": true,
+		"convert": {
+			"type": "dict",
+			"data": "InternetOfThingsEquipment_Road"
+		}
 	}, {
 		"name": "location",
 		"alias": "位置",
 		"sort": false
 	}, {
+		"name": "buriedDepth",
+		"alias": "埋深",
+		"sort": false
+	}, {
 		"name": "currentState",
 		"alias": "当前状态",
-		"sort": true,
-		"convert": {
-			"type": "dict",
-			"data": "UPNetwork_ownershipUnits"
-		}
-	}, {
-		"name": "ownershipUnit",
-		"alias": "埋没日期",
-		"sort": false,
-		"convert": {
-			"type": "date"
-		}
-	}, {
-		"name": "unitConnectionWay",
-		"alias": "权属单位",
 		"sort": false,
 		"convert": {
 			"type": "dict",
-			"data": "UPNetwork_ownershipUnits"
+			"data": "UPNetwork_currentState"
 		}
+	}, {
+		"name": "doorNumber",
+		"alias": "户号",
+		"sort": false
+	}, {
+		"name": "userName",
+		"alias": "用户名称",
+		"sort": false
+	}, {
+		"name": "waterDate",
+		"alias": "通水日期",
+		"sort": false
 	}],
-	"create_date_time": 1568215493370,
-	"update_date_time": 1568215493370
+	"create_date_time": 1570677184590,
+	"update_date_time": 1570677184590
 }

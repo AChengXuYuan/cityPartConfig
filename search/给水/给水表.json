@@ -1,12 +1,17 @@
 {
 	"name": "UPNetwork_JS_SB_Point_advanceSearch",
-	"property_set_type_id": "给水表高级查询view",
+	"property_set_type_id": "给水管井高级查询view",
 	"is_base": 1,
 	"properties": [{
+		"name": "roadName",
+		"alias": "所在道路",
+		"type": "dict",
+		"convertValue": "InternetOfThingsEquipment_Road"
+	}, {
 		"name": "currentState",
 		"alias": "当前状态",
 		"type": "dict",
-		"convertValue": "UPNetwork_ownershipUnits"
+		"convertValue": "UPNetwork_currentState"
 	}, {
 		"name": "ownershipUnit",
 		"alias": "埋没日期",
@@ -29,11 +34,11 @@
 			"type": "before_now"
 		}]
 	}, {
-		"name": "unitConnectionWay",
-		"alias": "权属单位",
+		"name": "userName",
+		"alias": "用水性质",
 		"type": "dict",
-		"convertValue": "UPNetwork_ownershipUnits"
+		"convertValue": "UPNetwork_waterUse"
 	}],
-	"create_date_time": 1568215614442,
-	"update_date_time": 1568215614442
+	"create_date_time": 1570677184590,
+	"update_date_time": 1570677184590
 }

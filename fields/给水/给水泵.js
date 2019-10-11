@@ -2,7 +2,7 @@ UPNetwork_JS_BZ_Point
 
 
 const shuibeng = [
-    {"name": "管点编码", "id": "pipeId"},
+    {"name": "管点编码", "id": "ID"},
     {"name": "*管点编号", "id": "pipeCode", col: true, ss: true, sort: true},
     {"name": "*管网类型", "id": "pipeNetworkType", col: true, sort: true},
     {"name": "*管点类型", "id": "tubeType", col: true},

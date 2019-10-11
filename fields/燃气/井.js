@@ -1,7 +1,7 @@
 UPNetwork_RQ_RQYJ_Point
 
 const rqgj = [
-    {"name": "*管点编码", "id": "pipeId", disabled: true },
+    {"name": "*管点编码", "id": "ID", disabled: true },
     {"name": "*管点编号", "id": "pipeCode", col: true, ss: true, sort: true, disabled: true },
     {"name": "*管网类型", "id": "pipeNetworkType", col: true, sort: true, disabled: true },
     {"name": "*管点类型", "id": "tubeType", col: true, sort: true, disabled: true },
@@ -10,7 +10,7 @@ const rqgj = [
     {"name": "*位置", "id": "location", col: true, ss: true},
     {"name": "所属服务区", "id": "belongsToTheServiceArea"},
     {"name": "地面高程", "id": "groundElevation"},
-    {"name": "埋深", "id": "buriedDepth"},
+    {"name": "埋深", "id": "buriedDepth", col: true},
     {"name": "维护次数", "id": "maintainTheNumberOf"},
     {"name": "当前状态", "id": "currentState", as: true, type: 'dictSelector', data: 'UPNetwork_currentState', col: true},
     {"name": "*埋没日期", "id": "ownershipUnit", type: 'date', sort: true, as: true, col: true},
@@ -22,6 +22,10 @@ const rqgj = [
     {"name": "设计单位", "id": "designUnits"},
     {"name": "*是否监测", "id": "whetherMonitoring", type: 'dictRadio', data: 'UPNetwork_whetherTheMonitoring'},
     {"name": "坐标", "id": "position"},
+
+    {"name": "井盖形状", "id": "manholeCoverShape", col: true}, 
+    {"name": "井盖材质", "id": "manholeCoverMaterial", type: 'dictSelector', data: 'UPNetwork_manholeCoverMaterial', as: true }, 
+    {"name": "井盖尺寸", "id": "capSize"}, 
     
     {"name": "备注", "id": "remark"},   
 ]

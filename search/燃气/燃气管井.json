@@ -28,7 +28,17 @@
 			"value": [1, "y"],
 			"type": "before_now"
 		}]
+	}, {
+		"name": "unitConnectionWay",
+		"alias": "权属单位",
+		"type": "dict",
+		"convertValue": "UPNetwork_ownershipUnits"
+	}, {
+		"name": "manholeCoverMaterial",
+		"alias": "井盖材质",
+		"type": "dict",
+		"convertValue": "UPNetwork_manholeCoverMaterial"
 	}],
-	"create_date_time": 1568228804459,
-	"update_date_time": 1568228804459
+	"create_date_time": 1570698710285,
+	"update_date_time": 1570698710285
 }

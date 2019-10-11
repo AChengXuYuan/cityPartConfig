@@ -2,7 +2,7 @@ UPNetwork_JS_JSYJ_Point
 
 
 const shuijing = [
-    {"name": "管点编码", "id": "pipeId"},
+    {"name": "管点编码", "id": "ID"},
     {"name": "*管点编号", "id": "pipeCode", col: true, ss: true, sort: true},
     {"name": "*管网类型", "id": "pipeNetworkType", col: true, sort: true},
     {"name": "*管点类型", "id": "tubeType", col: true, sort: true},
@@ -24,6 +24,10 @@ const shuijing = [
     {"name": "*是否监测", "id": "whetherMonitoring", type: 'dictRadio', data: 'UPNetwork_whetherTheMonitoring'},
     {"name": "坐标", "id": "position"},
     {"name": "备注", "id": "remark"},
+
+    {"name": "井盖形状", "id": "manholeCoverShape"},
+    {"name": "井盖材质", "id": "manholeCoverMaterial"},
+    {"name": "井盖尺寸", "id": "capSize"},
 
 ]
 
